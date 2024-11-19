@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--link de Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+<!--link a íconos-->
+
+<link rel="stylesheet" href="https://icons.getbootstrap.com/assets/font/bootstrap-icons.min.css">
+
+
+   
+    <!--link a mi css-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+    <!--link de js de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <title>Maria Clara Sisto</title>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"> <img src="imagenes/logomio.png" alt="logo">Maria Clara Sisto</a>
+          <button class="navbar-toggler" type="button" 
+       data-bs-toggle="collapse" data-bs-target="#miMenu" >
+       <span class="bi bi-menu-up"></span> <!--nuevo ícono de Boostrap-->
+          </button>
+          <div class="collapse navbar-collapse" id="miMenu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Contacto</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.instagram.com/clarisisto/">Instagram</a></li>
+                 <li><hr class="dropdown-divider"></li>
+                  <li><button type="button" class="ms-2 btn btn-dark" data-bs-toggle="modal" data-bs-target="#miModal">
+                   Mail
+                    </button> <!--boton de modal-->
+                  </li>
+                </ul>
+              </li>
+            
+            </ul>
+           
+          </div>
+        </div>
+      </nav> <!--cierra barra de navegación-->
+    
+
+
+
+<header class="container-fluid" style="background-color: #ff0000;">
+
+<h1> Mis trabajos</h1>
+
+<h5  class="subtitulo">Diseño Gráfico | Diseño Web | Diseño Industrial</h5>
+
+
+</header>
+
+
+<main class="container-md">
+<section class="w-75 m-auto">
+  
+    <img src="imagenes/PARIS-FINAL 2.png" class="img-fluid img-thumbnail" alt="foto 1">  
+    <h2>Mi último proyecto realizado</h2>
+<p>Vidriera realizada para el concurso anual de la marca Hérmes, junto a la Universidad Torcuato Di Tella, en el cual hicimos 2 vidrieras y 2 vitrinas para su local en Av. Alvear y Ayacucho. A partir del concepto de Faubourg, se desarrollo la idea de un caballo mensaje de la marca, que lleva la escencia de la misma, a todo el mundo.</p>
+
+
+    <section class="mt-3 w-100 row justify-content-around">
+
+
+      <div class="col-md-12 col-lg-3">
+        
+      <img src="imagenes/DiseñoGrafico.jpg" class="img-fluid img-thumbnail" alt="foto 1">  
+      <h3>Diseño<br> Gráfico</h3>
+        <h4>El Poder es Sexy</h4>
+<p>A travez de un fanzine sobre Dua Lipa, analice cómo ella usa la sexualidad en su estilo, vestimenta y letras para empoderar a las personas. Asi, combiné imágenes de poder con elementos sexuales, representando la convivencia de estos dos mundos distintos.</p>
+
+      </div>
+
+      <div class="col-md-5 col-lg-3">
+        
+        <img src="imagenes/DiseñoIndustrial.jpg" class="img-fluid img-thumbnail" alt="foto 2">
+        <h3>Diseño <br>Industrial</h3>
+        <h4>Ciclo 360 en el CCK</h4>
+<p>A partir del concepto de 360, se plantea un sistema de mobiliario 360, el cual es recorrible y adaptable, para ser implementado en el Centro Cultural Kirchner. Con materiales de acerco inoxidable y acrilico combinados, se plasmo el sistema.</p>
+
+      </div>
+
+      <div class="col-md-5 col-lg-3">
+        
+        <img src="imagenes/DiseñoWeb.jpg" class="img-fluid img-thumbnail" alt="foto 3 ">
+        <h3>Diseño <br>UX |UI</h3>
+        <h4>Rediseño de Zara Web</h4>
+<p>A pesar de que Zara sea una destacada marca, su  web presenta diversos problemas de usabilidad para el usuario. Asi, , realice una investigación UX, para luego proceder al rediseño de la interfaz de la misma, junto al prototipado.</p>
+
+      </div>
+  
+
+    </section>
+
+
+
+
+</main>
+
+
+<!--Mi modal-->
+
+
+<div class="modal fade" id="miModal" tabindex="-1" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="miModal">Formulario</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+
+
+            <form action="codigo.php" class="needs-validation" method="post" novalidate>
+            <div>
+            <label for="email" class="form-label">Email</label>
+            <input type="text" required name="email" id="email" class="form-control">
+
+            <div class="invalid-feedback">El campo de email está mal!</div>
+
+        </div> 
+
+        
+
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <input type="mensaje" required name="mensaje" id="mensaje" class="form-control">
+
+            <div class="invalid-feedback">El campo de mensaje está mal!</div>
+
+
+         <button class="btn btn-secondary">Enviar Mail</button>
+
+            </form>
+
+
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+     
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="container-fluid" style="background-color: #ff0000;">
+
+    <h5> ¡Muchas Gracias!</h5>
+    
+    <p class="nombrefinal">Maria Clara Sisto</p>
+    
+    
+    </footer>
+
+
+
+
+
+<!--codigo que permite validaciòn de formulario-->
+<script src="js/codigo.js"></script>
+
+
+</body>
+</html>
